@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Nusanet</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Input Form (Auto Pop Up) -->
+  <div id="welcome-form" class="overlay">
+    <div class="form-box">
+      <h2>Masukkan Data Anda</h2>
+      <input type="text" id="nama" placeholder="Nama Lengkap" required>
+      <input type="text" id="divisi" placeholder="Divisi" required>
+      <button onclick="enterSite()">Masuk</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="content" style="display:none;">
+    <!-- Section 1: Welcome -->
+    <section class="hero" data-aos="fade-up">
+      <h1>WELCOME TO THE TEAM</h1>
+      <h2 id="personal-nama"></h2>
+      <p id="personal-divisi"></p>
+    </section>
+
+    <!-- Section 2: Deskripsi -->
+    <section data-aos="fade-up">
+      <h2>Selamat Datang</h2>
+      <p>Kami sangat senang Anda bergabung bersama kami di Nusanet. Mari wujudkan inovasi bersama!</p>
+    </section>
+
+    <!-- Section 3: Persiapan Hari Pertama -->
+    <section data-aos="zoom-in">
+      <h2>Persiapan Hari Pertama Kerja</h2>
+      <ul>
+        <li>Bawa identitas diri & dokumen HR</li>
+        <li>Datang tepat waktu ke kantor</li>
+        <li>Kenali lingkungan kerja & rekan tim</li>
+      </ul>
+    </section>
+
+    <!-- Section 4: Lokasi Perusahaan -->
+    <section data-aos="fade-right">
+      <h2>Lokasi Kantor</h2>
+      <iframe src="https://www.google.com/maps/embed?..." 
+              width="100%" height="300" style="border:0;" allowfullscreen></iframe>
+    </section>
+
+    <!-- Section 5: Team -->
+    <section data-aos="fade-left">
+      <h2>Teman Satu Tim</h2>
+      <div class="team">
+        <div class="card">
+          <h3>Atasan Langsung</h3>
+          <p>Nama Atasan</p>
+        </div>
+        <div class="card">
+          <h3>Rekan Kerja</h3>
+          <p>Nama Rekan</p>
+        </div>
+        <div class="card">
+          <h3>Buddy</h3>
+          <p>Nama Buddy</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: 90 Day Goals -->
+    <section data-aos="flip-up">
+      <h2>90 Day Goals</h2>
+      <a href="goals.html" class="btn">Click Here</a>
+    </section>
+
+    <!-- Section 7: Misi -->
+    <section data-aos="zoom-in-up">
+      <h2>Misi Nusanet</h2>
+      <p>Menjadi penyedia solusi digital yang inovatif, kolaboratif, dan terpercaya.</p>
+    </section>
+
+    <!-- Section 8: Brand Logo -->
+    <section data-aos="fade-up">
+      <h2>All Brands</h2>
+      <div class="logo-container">
+        <img src="assets/logo1.png" alt="Brand1">
+        <img src="assets/logo2.png" alt="Brand2">
+        <img src="assets/logo3.png" alt="Brand3">
+      </div>
+    </section>
+  </div>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
